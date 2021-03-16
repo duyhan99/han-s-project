@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oxford Dictionary</title>
+</head>
+<body>
+    <h2>Dictionary</h2>
+        ENG = ["fish", "pig", "cat", "dog", "lion", "tiger"] <br> <br>
+        VN  = ["cá", "heo", "mèo", "chó", "sư tử", "hổ"] <br> <br>
+        <label for="END">English:</label>
+        <input type="text" value="" id="en">
+        <input type="button" value="Translate" onclick="trans()">
+        <h1 id="res"></h1>
+
+
+        <script>
+            let res = document.getElementById("res");
+            function trans() {
+            let input = document.getElementById("en").value;
+            let ENG = ["fish", "pig", "cat", "dog", "lion", "tiger"];
+            let VN  = ["cá", "heo", "mèo", "chó", "sư tử", "hổ"];
+            for (let i = 0; i < ENG.length; i++) {
+                if (input == ENG[i]) {
+                    res.innerHTML = VN[i];
+                    break;
+                } else {
+                    res.innerHTML = "hong co gi ca nhap lai di hihi"
+                
+                }
+            }
+            
+            }
+
+        </script>
+     
+ 
+
+    
+</body>
+</html>
